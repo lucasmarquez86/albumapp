@@ -1,0 +1,3 @@
+import Link from 'next/link'
+
+export default function Home(){return <main className="min-h-screen bg-black text-white grid place-items-center p-6"><div className="w-full max-w-4xl"><p className="text-sm tracking-[.3em] text-white/50 mb-5">ALBUMAPP</p><h1 className="text-5xl md:text-8xl font-black tracking-tight max-w-3xl">TU EQUIPO.<br/>TU ÁLBUM.</h1><p className="text-white/60 max-w-xl text-lg mt-6">Creá, compartí y completá el álbum digital de tu equipo.</p><div className="flex flex-wrap gap-3 mt-10"><Link href="/dashboard" className="bg-white text-black rounded-full px-7 py-3 font-bold">Entrar</Link><Link href="/album/demo" className="border border-white/30 rounded-full px-7 py-3 font-bold">Ver demo del álbum</Link></div></div></main>}
