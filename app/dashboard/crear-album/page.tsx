@@ -7,7 +7,7 @@ const patterns=[
  ['Líneas','repeating-linear-gradient(135deg,transparent 0 26px,var(--s) 26px 32px,transparent 32px 61px,var(--t) 61px 64px)'],
  ['Esquinas','linear-gradient(135deg,var(--s) 0 16%,transparent 16% 76%,var(--t) 76% 82%,transparent 82%)']
 ]
-const DEFAULT_PITCH='/stadium-default.jpg'
+const DEFAULT_PITCH='/depositphotos_100991624-stock-photo-soccer-stadium-background.jpg'
 export default function Page(){
  const [tool,setTool]=useState('diseño'),[p,setP]=useState('#8b542d'),[s,setS]=useState('#d2b38e'),[t,setT]=useState('#f3e7d7'),[pat,setPat]=useState(0),[patternPower,setPatternPower]=useState(24),[pitchTint,setPitchTint]=useState(42),[pitch,setPitch]=useState<string|null>(null),[logo,setLogo]=useState<string|null>(null),[body,setBody]=useState<string|null>(null)
  const cameraBody=useRef<HTMLInputElement>(null),galleryBody=useRef<HTMLInputElement>(null)
@@ -48,7 +48,7 @@ export default function Page(){
         </div>
         <div className="h-[24%] bg-[#f5f5f3] grid grid-cols-[30%_1fr_25%] border-t border-black/10"><div className="p-2 flex flex-col justify-center gap-2 text-[9px] font-black"><span>18-04-97</span><span>1,84 M</span><span className="border border-black/30 text-center px-1">PANINI</span></div><div className="p-1 flex flex-col justify-center text-center"><span className="text-[9px]">IGNACIO</span><b className="text-xl leading-none">VÁZQUEZ</b><span className="mt-2 py-1 text-[9px] text-white font-black" style={{background:p}}>DEFENSOR</span></div><div className="border-l border-black/10 flex flex-col items-center justify-center"><span className="text-2xl">🇦🇷</span><span className="text-[8px] font-black mt-1">ARGENTINA</span></div></div>
        </div></div>
-       <div><p className="text-[10px] font-black mb-2">ÁLBUM · DOBLE PÁGINA</p><div className="relative aspect-[16/9] rounded-xl overflow-hidden shadow-[0_18px_45px_rgba(0,0,0,.16)] bg-cover bg-center" style={{backgroundImage:stadium}}><Pattern soft/><div className="absolute inset-y-0 left-1/2 w-px bg-black/35"/><div className="relative h-full grid grid-cols-6 grid-rows-2 gap-[3%] p-[5%]">{Array.from({length:12},(_,i)=><div key={i} className="relative bg-white p-[5%] shadow-lg"><div className="h-full border border-white/40 bg-black/10 grid place-items-center"><span className="text-white/80 font-black text-xs">{String(i+1).padStart(3,'0')}</span></div></div>)}</div></div><div className="mt-4 bg-white/70 rounded-xl p-4 text-xs"><b>Fondo:</b> foto real preestablecida + capa del color primario + pattern. Nunca se genera la cancha con CSS.</div></div>
+       <div><p className="text-[10px] font-black mb-2">ÁLBUM · DOBLE PÁGINA</p><div className="relative aspect-[16/9] rounded-xl overflow-hidden shadow-[0_18px_45px_rgba(0,0,0,.16)] bg-cover bg-center" style={{backgroundImage:stadium}}><Pattern soft/><div className="absolute inset-y-0 left-1/2 w-px bg-black/35"/><div className="relative h-full grid grid-cols-6 grid-rows-2 gap-[3%] p-[5%]">{Array.from({length:12},(_,i)=><div key={i} className="relative bg-white p-[5%] shadow-lg"><div className="h-full border border-white/40 bg-black/10 grid place-items-center"><span className="text-white/80 font-black text-xs">{String(i+1).padStart(3,'0')}</span></div></div>)}</div></div><div className="mt-4 bg-white/70 rounded-xl p-4 text-xs"><b>Fondo:</b> foto real preestablecida + capa del color primario + pattern.</div></div>
       </div>
      </div>
     </section>
